@@ -10,5 +10,12 @@ public class TestMax {
         Assert.assertEquals(5, integers);
         System.out.println("Maximum Among All is.."+integers);
     }
+    @Test
+    public void givenThreeIntegers_FindMaxOfThem_ReturnMaximumTwo() {
+        maxObject = new FindMax();
+        int integers = maxObject.findMaxInteger(12, 44, 23);
+        Assert.assertEquals(4, integers);
+        System.out.println("Maximum Among All is.."+integers);
+    }
 
 }
