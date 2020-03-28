@@ -53,6 +53,7 @@ public class TestMax {
     public void givenThreeStrings_FindMaxOfThem_ReturnMaximumOne() {
         String largestString = FindMax.findLargestString("Pine-apple", "Peach", "Banana");
         Assert.assertEquals("Pine-apple", largestString);
-        System.out.println("Maximum Among All is.."+largestString);
+        System.out.println("Largest String Among All is.."+largestString);
     }
+
 }
