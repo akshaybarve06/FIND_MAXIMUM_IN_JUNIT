@@ -48,7 +48,7 @@ public class TestMax {
         System.out.println("Maximum Among All is.."+maxfloatNumber);
     }
 
-    //3.1 = Find Max of Three Strings Where Max Integer is First Number
+    //3.1 = Find Largest of Three Strings Where Largest String is First
     @Test
     public void givenThreeStrings_FindMaxOfThem_ReturnMaximumOne() {
         String largestString = FindMax.findLargestString("Pine-apple", "Peach", "Banana");
