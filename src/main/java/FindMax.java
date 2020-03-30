@@ -29,8 +29,4 @@ public class FindMax <E extends Comparable<E>>{
         printMaximum(maxResult);
         return maxResult;
     }
-    //Print result
-    private static <E> void printMaximum(E maxResult) {
-        System.out.println("Maximum Among All is.."+maxResult);
-    }
 }
