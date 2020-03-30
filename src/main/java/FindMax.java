@@ -1,30 +1,31 @@
 import java.util.Arrays;
 
-public class FindMax<E extends Comparable<E>> {
+public class FindMax <E extends Comparable> {
 
-    //Generic Array To Take Multiple Inputs
     E[] arrayElements;
 
-    //Default Constructor
-    public FindMax(){
+    // parameterized constructor
+    public FindMax(E[] arrayElements) {
+        this.arrayElements=arrayElements;
     }
-
-    // Parameterize constructor
-    public FindMax(E[] array) {
-        this.arrayElements=array;
-    }
-
-    //function for check maximum of given inputs
-    public static <E extends Comparable> E checkMaximum(E... arrayElements )
+    //function to sort and Find Maximum of inputs
+    public static  <E extends Comparable> E checkMaximum(E... arrayElements )
     {
         Arrays.sort(arrayElements);
+        E maxResult=arrayElements[arrayElements.length-1];
+        printMax(maxResult);
         return arrayElements[arrayElements.length-1];
     }
 
-    //Main Method
+    // method for Printing Result
+    private static <E> void printMax(E maxResult) {
+        System.out.println("Largest Among all is..."+maxResult);
+    }
+
+    // Main Method
     public static void main(String args[])
     {
-        System.out.println("Welcome To Find and Test Maximum Problem Using Generics");
+        System.out.printf("Welcome To Test Maximum Problem");
     }
 
 }
